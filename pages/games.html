@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>EY LIVE V2 | Oyun Merkezi</title>
+
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/games.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="page fadeIn">
+
+<header class="walletHeader">
+
+<button onclick="history.back()" class="iconBtn">
+
+←
+
+</button>
+
+<div>
+
+<h2>
+
+🎮 Oyun Merkezi
+
+</h2>
+
+<p>
+
+Coin Kazan & Eğlen
+
+</p>
+
+</div>
+
+<div class="coinBadge">
+
+<span class="coinBadgeIcon">🪙</span>
+
+<span id="gameCoinBalance">0</span>
+
+</div>
+
+</header>
+
+<section class="gamesGrid">
+
+<div class="gameCard" data-game="wheel">
+
+<div class="gameIcon">
+
+🎡
+
+</div>
+
+<h3>
+
+Lucky Wheel
+
+</h3>
+
+<p>
+
+Şansını Dene
+
+</p>
+
+<button>
+
+OYNA
+
+</button>
+
+</div>
+
+<div class="gameCard" data-game="slot">
+
+<div class="gameIcon">
+
+🎰
+
+</div>
+
+<h3>
+
+Slot Machine
+
+</h3>
+
+<p>
+
+Jackpot Kazan
+
+</p>
+
+<button>
+
+OYNA
+
+</button>
+
+</div>
+
+<div class="gameCard" data-game="dice">
+
+<div class="gameIcon">
+
+🎲
+
+</div>
+
+<h3>
+
+Dice
+
+</h3>
+
+<p>
+
+Yüksek Sayıyı Yakala
+
+</p>
+
+<button>
+
+OYNA
+
+</button>
+
+</div>
+
+<div class="gameCard" data-game="box">
+
+<div class="gameIcon">
+
+🎁
+
+</div>
+
+<h3>
+
+Lucky Box
+
+</h3>
+
+<p>
+
+Sürpriz Ödüller
+
+</p>
+
+<button>
+
+OYNA
+
+</button>
+
+</div>
+
+<div class="gameCard jackpotCard" data-game="jackpot">
+
+<div class="gameIcon">
+
+💰
+
+</div>
+
+<h3>
+
+Jackpot
+
+</h3>
+
+<p class="jackpotPoolText">
+
+Havuz: <span id="jackpotPoolMini">0</span>
+
+</p>
+
+<button>
+
+OYNA
+
+</button>
+
+</div>
+
+<div class="gameCard" data-game="tournament">
+
+<div class="gameIcon">
+
+🏆
+
+</div>
+
+<h3>
+
+Turnuvalar
+
+</h3>
+
+<p>
+
+Yakında
+
+</p>
+
+<button disabled>
+
+YAKINDA
+
+</button>
+
+</div>
+
+</section>
+
+</div>
+
+<div class="gameModal" id="gameModal">
+
+<div class="gameModalBox">
+
+<button class="gameModalClose" id="gameModalClose">✕</button>
+
+<div id="gameModalContent"></div>
+
+</div>
+
+</div>
+
+<nav class="bottomNav">
+
+<a href="home.html">
+
+🏠
+
+<span>Ana Sayfa</span>
+
+</a>
+
+<a href="room.html">
+
+🎙
+
+<span>Odalar</span>
+
+</a>
+
+<a class="active">
+
+🎮
+
+<span>Oyunlar</span>
+
+</a>
+
+<a href="chat.html">
+
+💬
+
+<span>Mesajlar</span>
+
+</a>
+
+<a href="profile.html">
+
+👤
+
+<span>Profil</span>
+
+</a>
+
+</nav>
+
+<script src="../core/storage.js"></script>
+<script src="../core/auth.js"></script>
+<script>if(!Auth.check()){location.href="login.html";}</script>
+<script src="../core/api.js"></script>
+<script src="../js/games.js"></script>
+
+</body>
+
+</html>

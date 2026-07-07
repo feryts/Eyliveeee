@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>EY LIVE V2 | Wallet</title>
+
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/wallet.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="page fadeIn">
+
+<header class="walletHeader">
+
+<button onclick="history.back()" class="iconBtn">
+
+←
+
+</button>
+
+<div>
+
+<h2>
+
+Cüzdan
+
+</h2>
+
+<p>
+
+Coin & Diamond
+
+</p>
+
+</div>
+
+<div style="width:45px"></div>
+
+</header>
+
+<section class="walletCard">
+
+<div class="walletItem">
+
+<h4>
+
+🪙 Coin
+
+</h4>
+
+<h1 id="coinBalance">
+
+0
+
+</h1>
+
+</div>
+
+<div class="walletItem">
+
+<h4>
+
+💎 Diamond
+
+</h4>
+
+<h1 id="diamondBalance">
+
+0
+
+</h1>
+
+</div>
+
+</section>
+
+<section class="walletButtons">
+
+<button id="buyCoin">
+
+🪙 Coin Satın Al
+
+</button>
+
+<button id="sendCoin">
+
+💸 Coin Gönder
+
+</button>
+
+<button id="historyBtn">
+
+📜 Geçmiş
+
+</button>
+
+</section>
+
+<section class="historyCard">
+
+<h3>
+
+Son İşlemler
+
+</h3>
+
+<div id="historyList">
+
+<div class="historyItem">
+
+Henüz işlem bulunmuyor.
+
+</div>
+
+</div>
+
+</section>
+
+</div>
+
+<script src="../core/storage.js"></script>
+<script src="../core/auth.js"></script>
+<script>if(!Auth.check()){location.href="login.html";}</script>
+<script src="../js/wallet.js"></script>
+
+</body>
+
+</html>

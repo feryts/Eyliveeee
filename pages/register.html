@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>EY LIVE | Kayıt Ol</title>
+
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/auth.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="authPage">
+
+<div class="authBrand">
+
+<div class="authLogo">🎤</div>
+
+<h1>EY LIVE</h1>
+
+<p>Connect • Chat • Play</p>
+
+</div>
+
+<div class="authCard">
+
+<h2>Hesap Oluştur</h2>
+<p class="authSub">Birkaç saniyede topluluğa katıl</p>
+
+<form id="registerForm">
+
+<div class="authField">
+
+<label>Kullanıcı Adı</label>
+<input type="text" id="regUsername" placeholder="Görünecek adın" autocomplete="nickname">
+
+</div>
+
+<div class="authField">
+
+<label>Telefon Numarası</label>
+<input type="tel" id="regPhone" placeholder="05xx xxx xx xx" autocomplete="tel">
+
+</div>
+
+<div class="authField">
+
+<label>Şifre</label>
+<input type="password" id="regPass" placeholder="En az 6 karakter" autocomplete="new-password">
+
+</div>
+
+<div class="authField">
+
+<label>Şifre (Tekrar)</label>
+<input type="password" id="regPass2" placeholder="Şifreni tekrar gir" autocomplete="new-password">
+
+</div>
+
+<p class="authError" id="regError"></p>
+
+<button type="submit" class="authPrimaryBtn">Kayıt Ol</button>
+
+</form>
+
+</div>
+
+<p class="authFooterText">Zaten hesabın var mı? <a href="login.html">Giriş Yap</a></p>
+
+<p class="authNote">Kayıt olarak topluluk kurallarını kabul etmiş olursun. Bu bir demo ortamıdır, gerçek ödeme veya kimlik bilgisi girmeyin.</p>
+
+</div>
+
+<script src="../core/storage.js"></script>
+<script src="../core/auth.js"></script>
+<script src="../js/auth-page.js"></script>
+
+</body>
+
+</html>

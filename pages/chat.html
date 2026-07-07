@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>EY LIVE V2 | Mesajlar</title>
+
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/chat.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="page fadeIn">
+
+<header class="walletHeader">
+
+<button onclick="history.back()" class="iconBtn">
+
+←
+
+</button>
+
+<div>
+
+<h2>
+
+Mesajlar
+
+</h2>
+
+<p>
+
+Son konuşmalar
+
+</p>
+
+</div>
+
+<div style="width:45px"></div>
+
+</header>
+
+<input
+id="searchInput"
+class="searchInput"
+placeholder="🔍 Kullanıcı Ara">
+
+<section id="chatList" class="chatList">
+
+</section>
+
+</div>
+
+<nav class="bottomNav">
+
+<a href="home.html">
+
+🏠
+
+<span>Ana Sayfa</span>
+
+</a>
+
+<a href="room.html">
+
+🎙
+
+<span>Odalar</span>
+
+</a>
+
+<a href="games.html">
+
+🎮
+
+<span>Oyunlar</span>
+
+</a>
+
+<a class="active">
+
+💬
+
+<span>Mesaj</span>
+
+</a>
+
+<a href="profile.html">
+
+👤
+
+<span>Profil</span>
+
+</a>
+
+</nav>
+
+<script src="../core/storage.js"></script>
+<script src="../core/auth.js"></script>
+<script>if(!Auth.check()){location.href="login.html";}</script>
+<script src="../core/api.js"></script>
+<script src="../js/chat.js"></script>
+
+</body>
+
+</html>

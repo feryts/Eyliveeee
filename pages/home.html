@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>EY LIVE V2</title>
+
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/home.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="page fadeIn">
+
+<header class="homeHeader">
+
+<div>
+
+<h2>EY LIVE</h2>
+
+<p>Hoş Geldin 👋</p>
+
+</div>
+
+<a href="profile.html" class="profileMini">
+
+<img src="../assets/avatar/default.svg">
+
+</a>
+
+</header>
+
+<section class="balance glass">
+
+<div>
+
+<h3>Coin</h3>
+
+<h1 id="coinText">0</h1>
+
+</div>
+
+<div>
+
+<h3>Diamond</h3>
+
+<h1 id="diamondText">0</h1>
+
+</div>
+
+</section>
+
+<h3 class="sectionTitle">
+
+🔥 Popüler Odalar
+
+</h3>
+
+<section id="roomList" class="roomGrid">
+
+</section>
+
+<h3 class="sectionTitle">
+
+👑 VIP Yayıncılar
+
+</h3>
+
+<section id="vipList" class="vipGrid">
+
+</section>
+
+</div>
+
+<nav class="bottomNav">
+
+<a class="active">
+
+🏠
+
+<span>Ana Sayfa</span>
+
+</a>
+
+<a href="room.html">
+
+🎙
+
+<span>Odalar</span>
+
+</a>
+
+<a href="games.html">
+
+🎮
+
+<span>Oyun</span>
+
+</a>
+
+<a href="chat.html">
+
+💬
+
+<span>Mesaj</span>
+
+</a>
+
+<a href="profile.html">
+
+👤
+
+<span>Profil</span>
+
+</a>
+
+</nav>
+
+<script src="../core/storage.js"></script>
+<script src="../core/auth.js"></script>
+<script>if(!Auth.check()){location.href="login.html";}</script>
+
+<script src="../js/app.js"></script>
+
+<script src="../js/home.js"></script>
+
+</body>
+
+</html>

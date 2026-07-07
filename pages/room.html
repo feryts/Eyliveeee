@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>EY LIVE V2 | Voice Room</title>
+
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/room.css">
+<link rel="stylesheet" href="../css/gift.css">
+<link rel="stylesheet" href="../css/profile.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="roomPage fadeIn">
+
+<header class="roomHeader">
+
+<button id="backBtn" class="iconBtn">
+
+←
+
+</button>
+
+<div class="roomInfo">
+
+<h2 id="roomTitle">
+
+Türkiye Lounge
+
+</h2>
+
+<p>
+
+<span id="roomId">
+
+ID 1001
+
+</span>
+
+•
+
+<span id="onlineCount">
+
+245 Online
+
+</span>
+
+</p>
+
+</div>
+
+<button class="iconBtn">
+
+⚙️
+
+</button>
+
+</header>
+
+<section class="hostSection">
+
+<div class="hostAvatar speaking">
+
+<img src="../assets/avatar/default.svg" alt="Host">
+
+<div class="hostRing"></div>
+
+</div>
+
+<h3>
+
+👑 EyLive
+
+</h3>
+
+<p>
+
+Host
+
+</p>
+
+</section>
+
+<section class="micGrid">
+
+<div class="micSeat occupied">
+
+<img src="../assets/avatar/default.svg">
+
+<span>EyLive</span>
+
+</div>
+
+<div class="micSeat occupied">
+
+<img src="../assets/avatar/default.svg">
+
+<span>Ahmet</span>
+
+</div>
+
+<div class="micSeat occupied">
+
+<img src="../assets/avatar/default.svg">
+
+<span>Ayşe</span>
+
+</div>
+
+<div class="micSeat occupied">
+
+<img src="../assets/avatar/default.svg">
+
+<span>Can</span>
+
+</div>
+
+<div class="micSeat empty">+</div>
+<div class="micSeat empty">+</div>
+<div class="micSeat empty">+</div>
+<div class="micSeat empty">+</div>
+<div class="micSeat empty">+</div>
+<div class="micSeat empty">+</div>
+<div class="micSeat empty">+</div>
+<div class="micSeat empty">+</div>
+
+</section>
+
+<section class="chatBox">
+
+<div id="chatList">
+
+<div class="chatItem">
+
+<b>Sistem</b>
+
+🎉 Odaya hoş geldiniz.
+
+</div>
+
+<div class="chatItem">
+
+<b>EyLive</b>
+
+Herkese iyi sohbetler ❤️
+
+</div>
+
+</div>
+
+</section>
+
+<footer class="roomBottom">
+
+<button id="giftBtn">
+
+🎁
+
+</button>
+
+<button id="emojiBtn">
+
+😀
+
+</button>
+
+<button id="heartBtn">
+
+❤️
+
+</button>
+
+<button id="micBtn">
+
+🎤
+
+</button>
+
+<button id="profileBtn">
+
+👤
+
+</button>
+
+</footer>
+
+</div>
+
+<script src="../core/storage.js"></script>
+<script src="../core/auth.js"></script>
+<script>if(!Auth.check()){location.href="login.html";}</script>
+<script src="../js/gift.js"></script>
+<script src="../js/profile.js"></script>
+<script src="../js/room.js"></script>
+
+</body>
+
+</html>

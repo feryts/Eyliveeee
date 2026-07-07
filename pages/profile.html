@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>EY LIVE V2 | Profil</title>
+
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/profilePage.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="page fadeIn" style="padding:0;">
+
+<header class="pfHeader">
+
+<button class="pfBack" onclick="history.back()">←</button>
+
+<button class="pfLogout" id="pfLogoutBtn">⎋</button>
+
+<img class="pfAvatar" id="pfAvatar" src="../assets/avatar/default.svg">
+
+<h2 class="pfName" id="pfName">Kullanıcı <span id="pfVerified"></span></h2>
+<p class="pfId" id="pfIdText">EY000000</p>
+
+<div class="pfVipBadge" id="pfVipBadge">👑 VIP 0</div>
+
+<div class="pfStats">
+
+<div>
+<h3 id="pfLevel">1</h3>
+<span>Level</span>
+</div>
+
+<div>
+<h3 id="pfFollowers">0</h3>
+<span>Takipçi</span>
+</div>
+
+<div>
+<h3 id="pfFollowing">0</h3>
+<span>Takip</span>
+</div>
+
+</div>
+
+</header>
+
+<section class="pfWallet">
+
+<div class="pfWalletCard">
+<div class="ic">🪙</div>
+<h3 id="pfCoin">0</h3>
+<p>Coin</p>
+</div>
+
+<div class="pfWalletCard">
+<div class="ic">💎</div>
+<h3 id="pfDiamond">0</h3>
+<p>Diamond</p>
+</div>
+
+</section>
+
+<section class="pfMenu">
+
+<a class="pfItem" href="wallet.html">
+<div class="pfIcon">💳</div>
+<span>Cüzdan</span>
+<div class="pfArrow">›</div>
+</a>
+
+<div class="pfItem">
+<div class="pfIcon">🎖</div>
+<span>Rozetler</span>
+<div class="pfArrow">›</div>
+</div>
+
+<div class="pfItem">
+<div class="pfIcon">🎁</div>
+<span>Envanter</span>
+<div class="pfArrow">›</div>
+</div>
+
+<div class="pfItem">
+<div class="pfIcon">🎤</div>
+<span>Yayıncı Başvurusu</span>
+<div class="pfArrow">›</div>
+</div>
+
+<div class="pfItem">
+<div class="pfIcon">👥</div>
+<span>Takipçilerim</span>
+<div class="pfArrow">›</div>
+</div>
+
+<div class="pfItem">
+<div class="pfIcon">⚙️</div>
+<span>Ayarlar</span>
+<div class="pfArrow">›</div>
+</div>
+
+<div class="pfItem danger" id="pfLogoutItem">
+<div class="pfIcon">🚪</div>
+<span>Çıkış Yap</span>
+<div class="pfArrow">›</div>
+</div>
+
+</section>
+
+</div>
+
+<nav class="bottomNav">
+
+<a href="home.html">
+
+🏠
+
+<span>Ana Sayfa</span>
+
+</a>
+
+<a href="room.html">
+
+🎙
+
+<span>Odalar</span>
+
+</a>
+
+<a href="games.html">
+
+🎮
+
+<span>Oyunlar</span>
+
+</a>
+
+<a href="chat.html">
+
+💬
+
+<span>Mesajlar</span>
+
+</a>
+
+<a class="active">
+
+👤
+
+<span>Profil</span>
+
+</a>
+
+</nav>
+
+<script src="../core/storage.js"></script>
+<script src="../core/auth.js"></script>
+<script>if(!Auth.check()){location.href="login.html";}</script>
+<script src="../js/profilePage.js"></script>
+
+</body>
+
+</html>
