@@ -1,0 +1,176 @@
+/* ==========================================
+      EY LIVE USERS PANEL v1.0
+========================================== */
+
+.content{
+padding:25px;
+flex:1;
+overflow:auto;
+background:#140022;
+min-height:100vh;
+}
+
+.content header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:25px;
+}
+
+.content h1{
+font-size:28px;
+font-weight:700;
+}
+
+.searchBox{
+margin-bottom:25px;
+}
+
+.searchBox input{
+width:100%;
+padding:16px;
+border:none;
+outline:none;
+border-radius:18px;
+background:#ffffff10;
+color:white;
+font-size:15px;
+}
+
+.userTable{
+width:100%;
+border-collapse:collapse;
+background:#ffffff08;
+border-radius:20px;
+overflow:hidden;
+}
+
+.userTable thead{
+background:#8a2eff;
+}
+
+.userTable th{
+padding:18px;
+font-size:14px;
+}
+
+.userTable td{
+padding:18px;
+text-align:center;
+border-bottom:1px solid rgba(255,255,255,.05);
+font-size:14px;
+}
+
+.userTable tr:hover{
+background:#ffffff08;
+}
+
+.statusOnline{
+background:#00c853;
+padding:6px 12px;
+border-radius:30px;
+font-size:12px;
+}
+
+.statusOffline{
+background:#666;
+padding:6px 12px;
+border-radius:30px;
+font-size:12px;
+}
+
+.manageBtn{
+background:linear-gradient(135deg,#8a2eff,#ff2ebd);
+border:none;
+padding:10px 18px;
+border-radius:12px;
+color:white;
+cursor:pointer;
+font-weight:600;
+}
+
+.modal{
+position:fixed;
+top:0;
+left:0;
+right:0;
+bottom:0;
+display:none;
+align-items:center;
+justify-content:center;
+background:rgba(0,0,0,.6);
+backdrop-filter:blur(10px);
+z-index:999;
+}
+
+.modalBox{
+width:90%;
+max-width:420px;
+background:#22003d;
+padding:25px;
+border-radius:25px;
+}
+
+.modalBox h2{
+margin-bottom:10px;
+}
+
+.modalBox p{
+opacity:.7;
+margin-bottom:20px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:12px;
+margin-bottom:20px;
+}
+
+.grid button{
+padding:14px;
+border:none;
+border-radius:15px;
+background:#ffffff12;
+color:white;
+cursor:pointer;
+transition:.3s;
+}
+
+.grid button:hover{
+background:#8a2eff;
+}
+
+#closeModal{
+width:100%;
+padding:15px;
+border:none;
+border-radius:15px;
+background:#ff2ebd;
+color:white;
+font-size:15px;
+font-weight:bold;
+cursor:pointer;
+}
+
+@media(max-width:900px){
+
+.sidebar{
+
+display:none;
+
+}
+
+.content{
+
+padding:15px;
+
+}
+
+.userTable{
+
+font-size:12px;
+
+}
+
+}

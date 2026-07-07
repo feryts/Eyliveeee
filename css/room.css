@@ -1,0 +1,218 @@
+/* ===========================================
+   EY LIVE V2
+   ROOM STYLE
+=========================================== */
+
+.roomPage{
+display:flex;
+flex-direction:column;
+height:100vh;
+padding-bottom:90px;
+}
+
+.roomHeader{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:18px;
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(20px);
+border-bottom:1px solid rgba(255,255,255,.06);
+}
+
+.iconBtn{
+width:46px;
+height:46px;
+border-radius:50%;
+background:rgba(255,255,255,.08);
+color:#fff;
+font-size:22px;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.roomInfo{
+text-align:center;
+flex:1;
+}
+
+.roomInfo h2{
+font-size:20px;
+font-weight:700;
+}
+
+.roomInfo p{
+margin-top:4px;
+font-size:13px;
+color:#bcbcd8;
+}
+
+.hostSection{
+padding:25px 0;
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+.hostAvatar{
+position:relative;
+width:110px;
+height:110px;
+border-radius:50%;
+}
+
+.hostAvatar img{
+width:100%;
+height:100%;
+border-radius:50%;
+object-fit:cover;
+border:4px solid #ffcc00;
+}
+
+.hostRing{
+position:absolute;
+left:-8px;
+top:-8px;
+right:-8px;
+bottom:-8px;
+border:3px solid #7B2EFF;
+border-radius:50%;
+animation:ring 2s linear infinite;
+}
+
+@keyframes ring{
+
+0%{
+transform:scale(.9);
+opacity:.3;
+}
+
+50%{
+transform:scale(1.1);
+opacity:1;
+}
+
+100%{
+transform:scale(.9);
+opacity:.3;
+}
+
+}
+
+.hostSection h3{
+margin-top:15px;
+font-size:22px;
+}
+
+.hostSection p{
+margin-top:5px;
+color:#bdbdd8;
+}
+
+.micGrid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:15px;
+padding:20px;
+}
+
+.micSeat{
+height:105px;
+background:rgba(255,255,255,.05);
+border-radius:22px;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+border:1px solid rgba(255,255,255,.05);
+transition:.25s;
+}
+
+.micSeat img{
+width:56px;
+height:56px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:8px;
+}
+
+.micSeat span{
+font-size:12px;
+}
+
+.micSeat.empty{
+font-size:38px;
+color:#777;
+}
+
+.micSeat:hover{
+transform:translateY(-4px);
+}
+
+.chatBox{
+flex:1;
+overflow:auto;
+padding:18px;
+}
+
+.chatItem{
+background:rgba(255,255,255,.05);
+padding:12px 15px;
+border-radius:16px;
+margin-bottom:12px;
+font-size:14px;
+}
+
+.chatItem b{
+color:#FFD54F;
+margin-right:6px;
+}
+
+.roomBottom{
+position:fixed;
+left:0;
+right:0;
+bottom:0;
+height:80px;
+display:flex;
+justify-content:space-evenly;
+align-items:center;
+background:rgba(20,15,35,.95);
+backdrop-filter:blur(20px);
+border-top:1px solid rgba(255,255,255,.06);
+}
+
+.roomBottom button{
+width:58px;
+height:58px;
+border-radius:50%;
+background:linear-gradient(135deg,#7B2EFF,#FF2E9E);
+color:white;
+font-size:24px;
+box-shadow:0 10px 25px rgba(123,46,255,.35);
+transition:.25s;
+}
+
+.roomBottom button:active{
+transform:scale(.9);
+}
+
+@media(max-width:480px){
+
+.micGrid{
+grid-template-columns:repeat(3,1fr);
+}
+
+.hostAvatar{
+width:90px;
+height:90px;
+}
+
+.roomBottom button{
+width:52px;
+height:52px;
+font-size:22px;
+}
+
+}

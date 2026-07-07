@@ -1,0 +1,117 @@
+/* ==========================================
+      EY LIVE VIP PANEL STYLE v1.0
+========================================== */
+
+.content{
+padding:25px;
+flex:1;
+overflow:auto;
+background:#140022;
+min-height:100vh;
+color:#fff;
+}
+
+.content header{
+margin-bottom:25px;
+}
+
+.vipPanel{
+background:#ffffff08;
+padding:25px;
+border-radius:25px;
+margin-bottom:25px;
+}
+
+.vipPanel input,
+.vipPanel select{
+width:100%;
+padding:15px;
+margin-bottom:15px;
+border:none;
+outline:none;
+border-radius:15px;
+background:#ffffff10;
+color:#fff;
+font-size:15px;
+}
+
+.vipPanel option{
+color:#000;
+}
+
+.actions{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:15px;
+}
+
+.actions button{
+padding:15px;
+border:none;
+border-radius:15px;
+cursor:pointer;
+font-size:15px;
+font-weight:600;
+color:#fff;
+transition:.3s;
+}
+
+#giveVip{
+background:#ff9800;
+}
+
+#extendVip{
+background:#2196f3;
+}
+
+#removeVip{
+background:#f44336;
+}
+
+#vipHistory{
+background:#8a2eff;
+}
+
+.actions button:hover{
+
+transform:translateY(-3px);
+
+}
+
+.logs{
+
+background:#ffffff08;
+
+padding:20px;
+
+border-radius:20px;
+
+}
+
+.logs h2{
+
+margin-bottom:15px;
+
+}
+
+.vipLog{
+
+padding:15px;
+
+margin-bottom:10px;
+
+border-radius:15px;
+
+background:#ffffff08;
+
+}
+
+@media(max-width:768px){
+
+.actions{
+
+grid-template-columns:1fr;
+
+}
+
+}

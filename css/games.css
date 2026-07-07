@@ -1,0 +1,683 @@
+/* ==========================================
+   EY LIVE V2
+   GAMES PAGE
+========================================== */
+
+.gamesGrid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+
+gap:18px;
+
+padding-bottom:100px;
+
+}
+
+.gameCard{
+
+background:linear-gradient(180deg,#1b1233,#28184d);
+
+border-radius:24px;
+
+padding:20px;
+
+text-align:center;
+
+transition:.3s;
+
+border:1px solid rgba(255,255,255,.05);
+
+box-shadow:0 10px 30px rgba(0,0,0,.25);
+
+}
+
+.gameCard:hover{
+
+transform:translateY(-6px);
+
+box-shadow:0 20px 40px rgba(123,46,255,.25);
+
+}
+
+.gameIcon{
+
+font-size:60px;
+
+margin-bottom:18px;
+
+}
+
+.gameCard h3{
+
+margin:0;
+
+font-size:22px;
+
+}
+
+.gameCard p{
+
+margin:12px 0 18px;
+
+font-size:14px;
+
+color:#bdbdd8;
+
+}
+
+.gameCard button{
+
+width:100%;
+
+height:48px;
+
+border:none;
+
+border-radius:15px;
+
+background:linear-gradient(135deg,#7B2EFF,#FF2E9E);
+
+color:white;
+
+font-size:15px;
+
+font-weight:700;
+
+cursor:pointer;
+
+transition:.25s;
+
+}
+
+.gameCard button:hover{
+
+transform:scale(1.04);
+
+}
+
+.gameCard button:disabled{
+
+background:#555;
+
+cursor:not-allowed;
+
+transform:none;
+
+}
+
+@media(max-width:700px){
+
+.gamesGrid{
+
+grid-template-columns:1fr;
+
+}
+
+.gameIcon{
+
+font-size:52px;
+
+}
+
+}
+
+/* ==========================================
+   COIN BADGE (header)
+========================================== */
+
+.coinBadge{
+
+display:flex;
+align-items:center;
+gap:6px;
+background:rgba(0,0,0,.35);
+border:1px solid rgba(245,158,11,.35);
+padding:8px 14px;
+border-radius:999px;
+font-weight:700;
+font-size:14px;
+color:#FCD34D;
+
+}
+
+.coinBadgeIcon{
+
+font-size:16px;
+
+}
+
+.jackpotPoolText{
+
+color:#FCD34D !important;
+font-weight:600;
+
+}
+
+.jackpotCard{
+
+border:1px solid rgba(245,158,11,.35) !important;
+background:linear-gradient(180deg,#2a1a10,#3a2010) !important;
+
+}
+
+/* ==========================================
+   GAME MODAL
+========================================== */
+
+.gameModal{
+
+position:fixed;
+inset:0;
+background:rgba(6,3,15,.82);
+backdrop-filter:blur(6px);
+display:none;
+align-items:center;
+justify-content:center;
+z-index:999;
+padding:20px;
+
+}
+
+.gameModal.open{
+
+display:flex;
+
+}
+
+.gameModalBox{
+
+position:relative;
+width:100%;
+max-width:380px;
+background:linear-gradient(180deg,#1b1233,#20123f);
+border:1px solid rgba(255,255,255,.08);
+border-radius:28px;
+padding:26px 20px 24px;
+box-shadow:0 25px 60px rgba(0,0,0,.5);
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:18px;
+animation:modalPop .25s ease;
+
+}
+
+@keyframes modalPop{
+
+from{transform:scale(.9);opacity:0;}
+to{transform:scale(1);opacity:1;}
+
+}
+
+.gameModalClose{
+
+position:absolute;
+top:14px;
+right:14px;
+width:32px;
+height:32px;
+border-radius:50%;
+border:none;
+background:rgba(255,255,255,.08);
+color:#fff;
+font-size:14px;
+cursor:pointer;
+
+}
+
+.gameStageTitle{
+
+font-size:13px;
+letter-spacing:.15em;
+text-transform:uppercase;
+color:#F59E0B;
+font-weight:700;
+text-align:center;
+
+}
+
+/* ---- coin toast ---- */
+
+.gameToast{
+
+position:absolute;
+top:14px;
+left:50%;
+transform:translateX(-50%);
+background:rgba(0,0,0,.85);
+border:1px solid rgba(245,158,11,.4);
+color:#FCD34D;
+padding:8px 16px;
+border-radius:999px;
+font-size:13px;
+font-weight:700;
+white-space:nowrap;
+opacity:0;
+pointer-events:none;
+transition:opacity .2s ease;
+z-index:5;
+
+}
+
+.gameToast.show{
+
+opacity:1;
+
+}
+
+.gameToast.lose{
+
+color:#cbd5e1;
+border-color:rgba(203,213,225,.25);
+
+}
+
+.gameToast.jackpot{
+
+color:#FDE68A;
+border-color:rgba(253,230,138,.6);
+background:linear-gradient(90deg,rgba(122,31,43,.9),rgba(120,72,0,.9));
+
+}
+
+/* ---- bet chips ---- */
+
+.betChips{
+
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+justify-content:center;
+
+}
+
+.betChip{
+
+width:46px;
+height:46px;
+border-radius:50%;
+border:2px dashed rgba(255,255,255,.3);
+background:transparent;
+color:#fff;
+font-size:11px;
+font-weight:700;
+cursor:pointer;
+display:flex;
+align-items:center;
+justify-content:center;
+position:relative;
+transition:.2s;
+
+}
+
+.betChip .betChipInner{
+
+position:absolute;
+inset:3px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+background:linear-gradient(135deg,#7B2EFF,#FF2E9E);
+box-shadow:inset 0 2px 4px rgba(255,255,255,.25);
+
+}
+
+.betChip.active{
+
+border-color:#fff;
+transform:scale(1.12);
+
+}
+
+/* ---- play button ---- */
+
+.gamePlayBtn{
+
+width:200px;
+padding:14px 0;
+border:none;
+border-radius:999px;
+background:linear-gradient(135deg,#7B2EFF,#FF2E9E);
+color:#fff;
+font-weight:800;
+font-size:16px;
+cursor:pointer;
+box-shadow:0 10px 25px rgba(123,46,255,.4);
+transition:.2s;
+
+}
+
+.gamePlayBtn:disabled{
+
+opacity:.5;
+cursor:not-allowed;
+
+}
+
+.gamePlayBtn:active:not(:disabled){
+
+transform:scale(.96);
+
+}
+
+/* ---- slot machine ---- */
+
+.slotFrame{
+
+background:linear-gradient(180deg,#2b2049,#14101f);
+border:1px solid rgba(245,158,11,.35);
+border-radius:20px;
+padding:16px;
+box-shadow:inset 0 2px 10px rgba(0,0,0,.6);
+
+}
+
+.slotReels{
+
+display:flex;
+gap:6px;
+
+}
+
+.slotReel{
+
+position:relative;
+width:64px;
+height:168px;
+overflow:hidden;
+border-radius:10px;
+background:rgba(0,0,0,.5);
+border:1px solid rgba(245,158,11,.25);
+display:flex;
+flex-direction:column;
+
+}
+
+.slotReel .slotCell{
+
+height:56px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+
+}
+
+.slotReel::before{
+
+content:"";
+position:absolute;
+inset:0;
+background:linear-gradient(180deg,rgba(0,0,0,.6),transparent 30%,transparent 70%,rgba(0,0,0,.6));
+pointer-events:none;
+
+}
+
+.slotReel::after{
+
+content:"";
+position:absolute;
+top:56px;
+left:0;
+right:0;
+height:56px;
+border-top:1px solid rgba(245,158,11,.5);
+border-bottom:1px solid rgba(245,158,11,.5);
+pointer-events:none;
+
+}
+
+/* ---- wheel (roulette / lucky wheel shared) ---- */
+
+.wheelWrap{
+
+position:relative;
+width:230px;
+height:230px;
+
+}
+
+.wheelDisc{
+
+width:100%;
+height:100%;
+border-radius:50%;
+border:6px solid rgba(245,158,11,.7);
+box-shadow:0 0 40px rgba(245,158,11,.35),inset 0 0 20px rgba(0,0,0,.6);
+transition:transform 3.4s cubic-bezier(.17,.67,.16,1);
+position:relative;
+
+}
+
+.wheelPointer{
+
+position:absolute;
+top:-6px;
+left:50%;
+transform:translateX(-50%);
+width:0;height:0;
+border-left:9px solid transparent;
+border-right:9px solid transparent;
+border-bottom:16px solid #FCD34D;
+z-index:5;
+filter:drop-shadow(0 2px 2px rgba(0,0,0,.4));
+
+}
+
+.wheelCenter{
+
+position:absolute;
+inset:32%;
+border-radius:50%;
+background:#1b1233;
+border:1px solid rgba(245,158,11,.4);
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:800;
+font-size:15px;
+color:#FCD34D;
+
+}
+
+.wheelSlice{
+
+position:absolute;
+left:50%;
+top:50%;
+height:50%;
+width:2px;
+transform-origin:top center;
+text-align:center;
+
+}
+
+.wheelSlice span{
+
+position:absolute;
+top:14px;
+left:50%;
+transform:translateX(-50%);
+font-size:11px;
+font-weight:800;
+color:rgba(255,255,255,.9);
+white-space:nowrap;
+
+}
+
+/* ---- dice ---- */
+
+.diceStage{
+
+display:flex;
+gap:14px;
+
+}
+
+.diceCube{
+
+width:64px;
+height:64px;
+border-radius:14px;
+background:linear-gradient(145deg,#fff,#e5e5e5);
+color:#1b1233;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+font-weight:800;
+box-shadow:0 10px 20px rgba(0,0,0,.35);
+
+}
+
+.diceCube.rolling{
+
+animation:diceRoll .5s linear infinite;
+
+}
+
+@keyframes diceRoll{
+
+0%{transform:rotate(0deg);}
+50%{transform:rotate(180deg) scale(1.05);}
+100%{transform:rotate(360deg);}
+
+}
+
+/* ---- lucky box ---- */
+
+.boxStage{
+
+position:relative;
+width:170px;
+height:170px;
+display:flex;
+align-items:center;
+justify-content:center;
+
+}
+
+.boxArt{
+
+width:140px;
+height:140px;
+border-radius:22px;
+background:linear-gradient(145deg,#7B2EFF,#FF2E9E);
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:64px;
+box-shadow:0 15px 35px rgba(123,46,255,.4),inset 0 2px 10px rgba(255,255,255,.15);
+transition:transform .2s ease;
+
+}
+
+.boxArt.shaking{
+
+animation:boxShake .22s ease-in-out infinite;
+
+}
+
+@keyframes boxShake{
+
+0%,100%{transform:rotate(-5deg);}
+50%{transform:rotate(5deg);}
+
+}
+
+.boxArt.opened{
+
+transform:scale(1.12);
+
+}
+
+/* ---- jackpot pool ---- */
+
+.jackpotPool{
+
+text-align:center;
+background:linear-gradient(180deg,#2a1620,#161022);
+border:1px solid rgba(245,158,11,.35);
+border-radius:16px;
+padding:12px 22px;
+
+}
+
+.jackpotPool .label{
+
+font-size:10px;
+letter-spacing:.2em;
+text-transform:uppercase;
+color:#FCA5A5;
+
+}
+
+.jackpotPool .value{
+
+font-size:24px;
+font-weight:800;
+color:#FDE68A;
+font-variant-numeric:tabular-nums;
+
+}
+
+.jackpotChest{
+
+width:150px;
+height:150px;
+border-radius:22px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:64px;
+background:linear-gradient(145deg,#7a1f2b,#2a0d14);
+border:2px solid rgba(245,158,11,.5);
+box-shadow:0 15px 35px rgba(122,31,43,.45),inset 0 2px 10px rgba(255,200,120,.15);
+transition:transform .2s ease;
+
+}
+
+.jackpotChest.shaking{
+
+animation:boxShake .22s ease-in-out infinite;
+
+}
+
+.jackpotChest.opened{
+
+transform:scale(1.12);
+
+}
+
+/* ---- coin burst ---- */
+
+.coinBurstLayer{
+
+position:absolute;
+inset:0;
+overflow:hidden;
+pointer-events:none;
+z-index:4;
+
+}
+
+.coinBurstLayer span{
+
+position:absolute;
+left:50%;
+top:50%;
+font-size:18px;
+animation:coinBurstMove .9s ease-out forwards;
+
+}
+
+@keyframes coinBurstMove{
+
+0%{transform:translate(-50%,-50%) scale(.3);opacity:1;}
+70%{opacity:1;}
+100%{transform:translate(calc(-50% + var(--dx)),calc(-50% + var(--dy))) scale(1.1);opacity:0;}
+
+}

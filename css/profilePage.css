@@ -1,0 +1,235 @@
+/* ==========================================
+   EY LIVE V2
+   PROFILE PAGE (own profile)
+========================================== */
+
+.pfHeader{
+
+position:relative;
+padding:40px 20px 70px;
+text-align:center;
+background:linear-gradient(160deg,var(--card2),var(--bg) 80%);
+border-radius:0 0 32px 32px;
+
+}
+
+.pfBack{
+
+position:absolute;
+top:18px;
+left:18px;
+width:38px;
+height:38px;
+border-radius:50%;
+background:rgba(255,255,255,.08);
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:16px;
+
+}
+
+.pfLogout{
+
+position:absolute;
+top:18px;
+right:18px;
+width:38px;
+height:38px;
+border-radius:50%;
+background:rgba(239,68,68,.15);
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:15px;
+
+}
+
+.pfAvatar{
+
+width:96px;
+height:96px;
+border-radius:50%;
+border:3px solid var(--secondary);
+object-fit:cover;
+box-shadow:0 10px 25px rgba(0,0,0,.4);
+
+}
+
+.pfName{
+
+margin-top:14px;
+font-size:20px;
+font-weight:800;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:6px;
+
+}
+
+.pfId{
+
+color:var(--text2);
+font-size:12px;
+margin-top:4px;
+
+}
+
+.pfVipBadge{
+
+display:inline-flex;
+align-items:center;
+gap:4px;
+margin-top:10px;
+padding:5px 14px;
+border-radius:999px;
+background:linear-gradient(135deg,#F59E0B,#FDE68A);
+color:#3a2400;
+font-weight:800;
+font-size:12px;
+
+}
+
+.pfStats{
+
+display:flex;
+justify-content:center;
+gap:28px;
+margin-top:16px;
+
+}
+
+.pfStats div{
+
+text-align:center;
+
+}
+
+.pfStats h3{
+
+font-size:16px;
+font-weight:800;
+
+}
+
+.pfStats span{
+
+font-size:11px;
+color:var(--text2);
+
+}
+
+.pfWallet{
+
+margin:-46px 16px 20px;
+position:relative;
+z-index:2;
+display:flex;
+gap:12px;
+
+}
+
+.pfWalletCard{
+
+flex:1;
+background:rgba(255,255,255,.06);
+backdrop-filter:blur(20px);
+border:1px solid rgba(255,255,255,.08);
+border-radius:20px;
+padding:16px;
+text-align:center;
+box-shadow:var(--shadow);
+
+}
+
+.pfWalletCard .ic{
+
+font-size:22px;
+
+}
+
+.pfWalletCard h3{
+
+margin-top:6px;
+font-size:17px;
+font-weight:800;
+
+}
+
+.pfWalletCard p{
+
+font-size:11px;
+color:var(--text2);
+margin-top:2px;
+
+}
+
+.pfMenu{
+
+padding:0 16px 100px;
+display:flex;
+flex-direction:column;
+gap:10px;
+
+}
+
+.pfItem{
+
+display:flex;
+align-items:center;
+gap:14px;
+background:var(--card);
+border:1px solid rgba(255,255,255,.05);
+border-radius:18px;
+padding:15px 16px;
+font-weight:600;
+font-size:14px;
+transition:.2s;
+
+}
+
+.pfItem:active{
+
+transform:scale(.98);
+
+}
+
+.pfItem .pfIcon{
+
+width:38px;
+height:38px;
+border-radius:12px;
+background:rgba(123,46,255,.15);
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:17px;
+
+}
+
+.pfItem span{
+
+flex:1;
+
+}
+
+.pfItem .pfArrow{
+
+color:var(--text2);
+font-size:13px;
+flex:none;
+
+}
+
+.pfItem.danger .pfIcon{
+
+background:rgba(239,68,68,.15);
+
+}
+
+.pfItem.danger{
+
+color:#fca5a5;
+
+}
