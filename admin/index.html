@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>EY LIVE Admin</title>
+
+<script>
+
+if(localStorage.getItem("ey_admin")!=="true"){
+
+    location.href="login.html";
+
+}
+
+</script>
+
+<link rel="stylesheet" href="../css/admin.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="admin">
+
+<aside class="sidebar">
+
+<h2>👑 EY LIVE</h2>
+
+<ul>
+
+<li class="active" onclick="location.href='index.html'">
+📊 Dashboard
+</li>
+
+<li onclick="location.href='users.html'">
+👥 Kullanıcılar
+</li>
+
+<li onclick="location.href='rooms.html'">
+🎙 Odalar
+</li>
+
+<li onclick="location.href='coins.html'">
+🪙 Coin
+</li>
+
+<li onclick="location.href='vip.html'">
+👑 VIP
+</li>
+
+<li onclick="location.href='agency.html'">
+🏢 Ajans
+</li>
+
+<li>
+🎁 Hediyeler
+</li>
+
+<li>
+📢 Duyurular
+</li>
+
+<li>
+📈 İstatistik
+</li>
+
+<li id="logoutBtn">
+🚪 Çıkış Yap
+</li>
+
+</ul>
+
+</aside>
+
+<main class="content">
+
+<header>
+
+<h1>Dashboard</h1>
+
+<div class="adminUser">
+
+🟢 Süper Admin
+
+</div>
+
+</header>
+
+<div class="cards">
+
+<div class="card">
+<h2>1542</h2>
+<p>Toplam Kullanıcı</p>
+</div>
+
+<div class="card">
+<h2>87</h2>
+<p>Aktif Oda</p>
+</div>
+
+<div class="card">
+<h2>325</h2>
+<p>VIP Kullanıcı</p>
+</div>
+
+<div class="card">
+<h2>5.2M</h2>
+<p>Toplam Coin</p>
+</div>
+
+</div>
+
+<div class="table">
+
+<h2>Son Girişler</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+<th>Kullanıcı</th>
+<th>VIP</th>
+<th>Coin</th>
+<th>Durum</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>EY100001</td>
+<td>EyLive</td>
+<td>VIP 5</td>
+<td>125000</td>
+<td>🟢 Online</td>
+
+</tr>
+
+<tr>
+
+<td>EY100245</td>
+<td>Elif</td>
+<td>VIP 3</td>
+<td>85000</td>
+<td>🟢 Online</td>
+
+</tr>
+
+<tr>
+
+<td>EY100533</td>
+<td>Ahmet</td>
+<td>VIP 1</td>
+<td>25000</td>
+<td>⚪ Offline</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</main>
+
+</div>
+
+<script>
+
+document.getElementById("logoutBtn").onclick=function(){
+
+localStorage.removeItem("ey_admin");
+
+location.href="login.html";
+
+};
+
+</script>
+
+</body>
+</html>

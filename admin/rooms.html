@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>EY LIVE Admin - Odalar</title>
+
+<link rel="stylesheet" href="../css/admin.css">
+<link rel="stylesheet" href="../css/rooms.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="admin">
+
+<aside class="sidebar">
+
+<h2>EY LIVE</h2>
+
+<ul>
+
+<li onclick="location.href='index.html'">📊 Dashboard</li>
+
+<li onclick="location.href='users.html'">👥 Kullanıcılar</li>
+
+<li class="active">🎙 Odalar</li>
+
+<li>🪙 Coin</li>
+
+<li>💎 Diamond</li>
+
+<li>👑 VIP</li>
+
+<li>🏢 Ajans</li>
+
+<li>📢 Duyurular</li>
+
+<li>⚙ Ayarlar</li>
+
+</ul>
+
+</aside>
+
+<main class="content">
+
+<header>
+
+<h1>Oda Yönetimi</h1>
+
+</header>
+
+<input id="searchRoom" placeholder="Oda Ara...">
+
+<table class="roomTable">
+
+<thead>
+
+<tr>
+
+<th>Oda ID</th>
+
+<th>Oda Adı</th>
+
+<th>Host</th>
+
+<th>Kullanıcı</th>
+
+<th>Durum</th>
+
+<th>İşlem</th>
+
+</tr>
+
+</thead>
+
+<tbody id="roomList">
+
+</tbody>
+
+</table>
+
+</main>
+
+</div>
+
+<div id="roomModal" class="modal">
+
+<div class="modalBox">
+
+<h2>Oda Yönetimi</h2>
+
+<p id="roomInfo"></p>
+
+<button id="closeRoom">❌ Odayı Kapat</button>
+
+<button id="lockRoom">🔒 Odayı Kilitle</button>
+
+<button id="announceRoom">📢 Duyuru Gönder</button>
+
+<button id="deleteRoom">🗑 Odayı Sil</button>
+
+<button id="closeModal">Kapat</button>
+
+</div>
+
+</div>
+
+<script src="../js/rooms.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>EY LIVE Admin - Coin Yönetimi</title>
+
+<link rel="stylesheet" href="../css/admin.css">
+<link rel="stylesheet" href="../css/coins.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="admin">
+
+<aside class="sidebar">
+
+<h2>EY LIVE</h2>
+
+<ul>
+
+<li onclick="location.href='index.html'">📊 Dashboard</li>
+
+<li onclick="location.href='users.html'">👥 Kullanıcılar</li>
+
+<li onclick="location.href='rooms.html'">🎙 Odalar</li>
+
+<li class="active">🪙 Coin</li>
+
+<li>💎 Diamond</li>
+
+<li>👑 VIP</li>
+
+<li>🏢 Ajans</li>
+
+<li>📢 Duyurular</li>
+
+<li>⚙ Ayarlar</li>
+
+</ul>
+
+</aside>
+
+<main class="content">
+
+<header>
+
+<h1>Coin Yönetimi</h1>
+
+</header>
+
+<div class="coinPanel">
+
+<input id="userId" placeholder="Kullanıcı ID">
+
+<input id="coinAmount" type="number" placeholder="Coin Miktarı">
+
+<div class="actions">
+
+<button id="addCoin">🪙 Coin Ekle</button>
+
+<button id="removeCoin">➖ Coin Sil</button>
+
+<button id="addDiamond">💎 Diamond</button>
+
+<button id="addVip">👑 VIP Ver</button>
+
+<button id="addLevel">⭐ Level</button>
+
+<button id="historyBtn">📜 Geçmiş</button>
+
+</div>
+
+</div>
+
+<div class="logs">
+
+<h2>Son İşlemler</h2>
+
+<div id="historyList"></div>
+
+</div>
+
+</main>
+
+</div>
+
+<script src="../js/coins.js"></script>
+
+</body>
+
+</html>

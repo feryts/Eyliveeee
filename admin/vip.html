@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>EY LIVE Admin - VIP Yönetimi</title>
+
+<link rel="stylesheet" href="../css/admin.css">
+<link rel="stylesheet" href="../css/vip.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="admin">
+
+<aside class="sidebar">
+
+<h2>EY LIVE</h2>
+
+<ul>
+
+<li onclick="location.href='index.html'">📊 Dashboard</li>
+
+<li onclick="location.href='users.html'">👥 Kullanıcılar</li>
+
+<li onclick="location.href='rooms.html'">🎙 Odalar</li>
+
+<li onclick="location.href='coins.html'">🪙 Coin</li>
+
+<li class="active">👑 VIP</li>
+
+<li>🏢 Ajans</li>
+
+<li>🎁 Hediyeler</li>
+
+<li>📢 Duyurular</li>
+
+<li>⚙ Ayarlar</li>
+
+</ul>
+
+</aside>
+
+<main class="content">
+
+<header>
+
+<h1>VIP Yönetimi</h1>
+
+</header>
+
+<div class="vipPanel">
+
+<input id="vipUser" placeholder="Kullanıcı ID">
+
+<select id="vipLevel">
+
+<option value="1">VIP 1</option>
+<option value="2">VIP 2</option>
+<option value="3">VIP 3</option>
+<option value="4">VIP 4</option>
+<option value="5">VIP 5</option>
+<option value="6">VIP 6</option>
+<option value="7">VIP 7</option>
+<option value="8">VIP 8</option>
+<option value="9">VIP 9</option>
+<option value="10">VIP 10</option>
+<option value="11">VIP 11</option>
+<option value="12">VIP 12</option>
+<option value="13">VIP 13</option>
+<option value="14">VIP 14</option>
+<option value="15">VIP 15</option>
+
+</select>
+
+<input id="vipDays" type="number" placeholder="VIP Süresi (Gün)">
+
+<div class="actions">
+
+<button id="giveVip">👑 VIP Ver</button>
+
+<button id="extendVip">📅 Süre Uzat</button>
+
+<button id="removeVip">❌ VIP Kaldır</button>
+
+<button id="vipHistory">📜 Geçmiş</button>
+
+</div>
+
+</div>
+
+<div class="logs">
+
+<h2>VIP İşlem Geçmişi</h2>
+
+<div id="vipLogList"></div>
+
+</div>
+
+</main>
+
+</div>
+
+<script src="../js/vip.js"></script>
+
+</body>
+
+</html>
