@@ -1,0 +1,122 @@
+[
+  {
+    "level": 1,
+    "name": "VIP 1",
+    "color": "#8A2BE2",
+    "frame": "vip1.png",
+    "chatColor": "#8A2BE2",
+    "dailyCoin": 100
+  },
+  {
+    "level": 2,
+    "name": "VIP 2",
+    "color": "#7B68EE",
+    "frame": "vip2.png",
+    "chatColor": "#7B68EE",
+    "dailyCoin": 200
+  },
+  {
+    "level": 3,
+    "name": "VIP 3",
+    "color": "#4169E1",
+    "frame": "vip3.png",
+    "chatColor": "#4169E1",
+    "dailyCoin": 300
+  },
+  {
+    "level": 4,
+    "name": "VIP 4",
+    "color": "#00BFFF",
+    "frame": "vip4.png",
+    "chatColor": "#00BFFF",
+    "dailyCoin": 500
+  },
+  {
+    "level": 5,
+    "name": "VIP 5",
+    "color": "#00CED1",
+    "frame": "vip5.png",
+    "chatColor": "#00CED1",
+    "dailyCoin": 700
+  },
+  {
+    "level": 6,
+    "name": "VIP 6",
+    "color": "#20B2AA",
+    "frame": "vip6.png",
+    "chatColor": "#20B2AA",
+    "dailyCoin": 1000
+  },
+  {
+    "level": 7,
+    "name": "VIP 7",
+    "color": "#32CD32",
+    "frame": "vip7.png",
+    "chatColor": "#32CD32",
+    "dailyCoin": 1500
+  },
+  {
+    "level": 8,
+    "name": "VIP 8",
+    "color": "#FFD700",
+    "frame": "vip8.png",
+    "chatColor": "#FFD700",
+    "dailyCoin": 2000
+  },
+  {
+    "level": 9,
+    "name": "VIP 9",
+    "color": "#FFA500",
+    "frame": "vip9.png",
+    "chatColor": "#FFA500",
+    "dailyCoin": 3000
+  },
+  {
+    "level": 10,
+    "name": "VIP 10",
+    "color": "#FF8C00",
+    "frame": "vip10.png",
+    "chatColor": "#FF8C00",
+    "dailyCoin": 5000
+  },
+  {
+    "level": 11,
+    "name": "VIP 11",
+    "color": "#FF69B4",
+    "frame": "vip11.png",
+    "chatColor": "#FF69B4",
+    "dailyCoin": 7000
+  },
+  {
+    "level": 12,
+    "name": "VIP 12",
+    "color": "#FF1493",
+    "frame": "vip12.png",
+    "chatColor": "#FF1493",
+    "dailyCoin": 10000
+  },
+  {
+    "level": 13,
+    "name": "VIP 13",
+    "color": "#DC143C",
+    "frame": "vip13.png",
+    "chatColor": "#DC143C",
+    "dailyCoin": 15000
+  },
+  {
+    "level": 14,
+    "name": "VIP 14",
+    "color": "#8B0000",
+    "frame": "vip14.png",
+    "chatColor": "#8B0000",
+    "dailyCoin": 25000
+  },
+  {
+    "level": 15,
+    "name": "VIP 15",
+    "color": "#FFD700",
+    "frame": "vip15.png",
+    "chatColor": "#FFD700",
+    "dailyCoin": 50000
+  }
+]

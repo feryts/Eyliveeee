@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Lucky Wheel",
+    "icon": "🎡",
+    "minBet": 10,
+    "maxBet": 10000,
+    "status": true,
+    "category": "wheel"
+  },
+  {
+    "id": 2,
+    "name": "Slot Machine",
+    "icon": "🎰",
+    "minBet": 20,
+    "maxBet": 50000,
+    "status": true,
+    "category": "slot"
+  },
+  {
+    "id": 3,
+    "name": "Dice",
+    "icon": "🎲",
+    "minBet": 10,
+    "maxBet": 20000,
+    "status": true,
+    "category": "dice"
+  },
+  {
+    "id": 4,
+    "name": "Lucky Box",
+    "icon": "🎁",
+    "minBet": 50,
+    "maxBet": 10000,
+    "status": true,
+    "category": "box"
+  },
+  {
+    "id": 5,
+    "name": "Jackpot",
+    "icon": "💰",
+    "minBet": 100,
+    "maxBet": 100000,
+    "status": true,
+    "category": "jackpot"
+  }
+]

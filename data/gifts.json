@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "name": "Rose",
+    "emoji": "🌹",
+    "coin": 10,
+    "category": "basic",
+    "animation": "rose"
+  },
+  {
+    "id": 2,
+    "name": "Heart",
+    "emoji": "❤️",
+    "coin": 20,
+    "category": "basic",
+    "animation": "heart"
+  },
+  {
+    "id": 3,
+    "name": "Cake",
+    "emoji": "🎂",
+    "coin": 99,
+    "category": "party",
+    "animation": "cake"
+  },
+  {
+    "id": 4,
+    "name": "Bear",
+    "emoji": "🧸",
+    "coin": 299,
+    "category": "cute",
+    "animation": "bear"
+  },
+  {
+    "id": 5,
+    "name": "Car",
+    "emoji": "🚗",
+    "coin": 999,
+    "category": "luxury",
+    "animation": "car"
+  },
+  {
+    "id": 6,
+    "name": "Yacht",
+    "emoji": "🛥️",
+    "coin": 2999,
+    "category": "luxury",
+    "animation": "yacht"
+  },
+  {
+    "id": 7,
+    "name": "Castle",
+    "emoji": "🏰",
+    "coin": 9999,
+    "category": "legend",
+    "animation": "castle"
+  },
+  {
+    "id": 8,
+    "name": "Dragon",
+    "emoji": "🐉",
+    "coin": 20000,
+    "category": "legend",
+    "animation": "dragon"
+  }
+]

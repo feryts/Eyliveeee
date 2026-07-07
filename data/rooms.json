@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1001,
+    "name": "Türkiye Lounge",
+    "hostId": "EY100001",
+    "category": "Genel",
+    "country": "TR",
+    "online": 245,
+    "locked": false,
+    "password": "",
+    "background": "room1.jpg",
+    "music": true,
+    "micCount": 12
+  },
+  {
+    "id": 1002,
+    "name": "Gece Sohbeti",
+    "hostId": "EY100002",
+    "category": "Sohbet",
+    "country": "TR",
+    "online": 132,
+    "locked": false,
+    "password": "",
+    "background": "room2.jpg",
+    "music": false,
+    "micCount": 12
+  },
+  {
+    "id": 1003,
+    "name": "VIP Club",
+    "hostId": "EY100005",
+    "category": "VIP",
+    "country": "TR",
+    "online": 58,
+    "locked": true,
+    "password": "1234",
+    "background": "room3.jpg",
+    "music": true,
+    "micCount": 12
+  },
+  {
+    "id": 1004,
+    "name": "Müzik Dünyası",
+    "hostId": "EY100003",
+    "category": "Müzik",
+    "country": "TR",
+    "online": 189,
+    "locked": false,
+    "password": "",
+    "background": "room4.jpg",
+    "music": true,
+    "micCount": 12
+  },
+  {
+    "id": 1005,
+    "name": "Oyun Odası",
+    "hostId": "EY100004",
+    "category": "Oyun",
+    "country": "TR",
+    "online": 91,
+    "locked": false,
+    "password": "",
+    "background": "room5.jpg",
+    "music": false,
+    "micCount": 12
+  }
+]
