@@ -6,10 +6,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-<title>EY LIVE | Giriş Yap</title>
+<title>EY LIVE - Giriş</title>
 
 <link rel="stylesheet" href="../css/style.css">
-<link rel="stylesheet" href="../css/auth.css">
+<link rel="stylesheet" href="../css/login.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
@@ -17,60 +17,79 @@
 
 <body>
 
-<div class="authPage">
+<div class="loginPage">
 
-<div class="authBrand">
+<div class="loginCard">
 
-<div class="authLogo">🎤</div>
+<div class="logoArea">
+
+<div class="logoCircle">
+
+🎤
+
+</div>
 
 <h1>EY LIVE</h1>
 
-<p>Connect • Chat • Play</p>
+<p>Telefon Numarası ile Giriş Yap</p>
 
 </div>
-
-<div class="authCard">
-
-<h2>Tekrar Hoş Geldin</h2>
-<p class="authSub">Hesabına giriş yap ve odalara katıl</p>
 
 <form id="loginForm">
 
-<div class="authField">
+<label>Telefon Numarası</label>
 
-<label>Telefon veya Kullanıcı Adı</label>
-<input type="text" id="loginId" placeholder="Örn: 05xx xxx xx xx" autocomplete="username">
+<div class="phoneBox">
+
+<select id="countryCode">
+
+<option value="+90">🇹🇷 +90</option>
+
+</select>
+
+<input
+type="tel"
+id="phone"
+placeholder="5XXXXXXXXX"
+required>
 
 </div>
-
-<div class="authField">
 
 <label>Şifre</label>
-<input type="password" id="loginPass" placeholder="••••••••" autocomplete="current-password">
 
-</div>
+<input
+type="password"
+id="password"
+placeholder="Şifreniz"
+required>
 
-<p class="authError" id="loginError"></p>
+<button type="submit" class="loginBtn">
 
-<button type="submit" class="authPrimaryBtn">Giriş Yap</button>
+Giriş Yap
+
+</button>
 
 </form>
 
-<div class="authDivider">veya</div>
+<div class="registerBox">
 
-<button class="authGhostBtn" id="guestBtn">👋 Misafir Olarak Devam Et</button>
+<span>Hesabın yok mu?</span>
+
+<a href="register.html">
+
+Kayıt Ol
+
+</a>
 
 </div>
 
-<p class="authFooterText">Hesabın yok mu? <a href="register.html">Kayıt Ol</a></p>
-
-<p class="authNote">Giriş yaparak topluluk kurallarını kabul etmiş olursun. Bu bir demo ortamıdır, gerçek ödeme veya kimlik bilgisi girmeyin.</p>
+</div>
 
 </div>
 
 <script src="../core/storage.js"></script>
 <script src="../core/auth.js"></script>
-<script src="../js/auth-page.js"></script>
+<script src="../js/login.js"></script>
 
 </body>
 
