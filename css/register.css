@@ -1,0 +1,203 @@
+/* ===========================================
+   EY LIVE
+   Register Page
+=========================================== */
+
+.registerPage{
+
+min-height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:30px;
+
+background:linear-gradient(180deg,#0B0618,#1A1035,#241044);
+
+}
+
+.registerCard{
+
+width:100%;
+
+max-width:480px;
+
+background:rgba(255,255,255,.06);
+
+backdrop-filter:blur(25px);
+
+border:1px solid rgba(255,255,255,.08);
+
+border-radius:28px;
+
+padding:30px;
+
+box-shadow:0 20px 45px rgba(0,0,0,.35);
+
+}
+
+.registerCard h1{
+
+font-size:38px;
+
+font-weight:800;
+
+text-align:center;
+
+margin-bottom:8px;
+
+}
+
+.registerCard p{
+
+text-align:center;
+
+color:#BDBDD5;
+
+margin-bottom:30px;
+
+}
+
+.registerCard label{
+
+display:block;
+
+margin-bottom:8px;
+
+margin-top:18px;
+
+font-weight:600;
+
+font-size:14px;
+
+}
+
+.registerCard input,
+.registerCard select{
+
+width:100%;
+
+height:54px;
+
+padding:0 18px;
+
+border:none;
+
+outline:none;
+
+border-radius:18px;
+
+background:rgba(255,255,255,.08);
+
+color:white;
+
+font-size:15px;
+
+}
+
+.registerCard input::placeholder{
+
+color:#BDBDD5;
+
+}
+
+.phoneBox{
+
+display:flex;
+
+gap:10px;
+
+}
+
+.phoneBox select{
+
+width:110px;
+
+}
+
+.phoneBox input{
+
+flex:1;
+
+}
+
+#avatar{
+
+padding:14px;
+
+}
+
+.registerCard button{
+
+margin-top:30px;
+
+width:100%;
+
+height:56px;
+
+border:none;
+
+border-radius:18px;
+
+background:linear-gradient(135deg,#7B2EFF,#FF2E9E);
+
+color:white;
+
+font-size:17px;
+
+font-weight:700;
+
+cursor:pointer;
+
+transition:.25s;
+
+}
+
+.registerCard button:hover{
+
+transform:translateY(-2px);
+
+box-shadow:0 10px 25px rgba(123,46,255,.45);
+
+}
+
+.loginLink{
+
+margin-top:25px;
+
+text-align:center;
+
+color:#CFCFE7;
+
+}
+
+.loginLink a{
+
+color:#FF2E9E;
+
+font-weight:700;
+
+text-decoration:none;
+
+}
+
+@media(max-width:600px){
+
+.registerCard{
+
+padding:22px;
+
+border-radius:22px;
+
+}
+
+.registerCard h1{
+
+font-size:30px;
+
+}
+
+}
